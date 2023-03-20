@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 
 app.use("/", express.static("static"))
+app.use("/build/", express.static("static"))
 
 //special offer post
 app.post("/specialoffer", (req, res) => {
